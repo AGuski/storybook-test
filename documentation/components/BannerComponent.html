@@ -1,0 +1,497 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>storybook-test documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">storybook-test documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>BannerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/banner.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>A configurable component to display and emphasize information.
+The content can be defined by an optional text or content projection.</p>
+
+    </p>
+
+
+
+    <p class="comment">
+        <h3>Example</h3>
+    </p>
+    <div class="io-description">
+                <div>
+                    <pre class="line-numbers"><code class="language-html">```
+&lt;banner
+  type=&quot;WARNING&quot;
+  text=&quot;Default text to be used within banner&quot;
+&gt;&lt;/banner&gt;
+```</code></pre>
+                </div>
+    </div>
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>banner</code></td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">styles</td>
+                <td class="col-md-9"><code>
+    :host {
+      display: flex;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px #00000066;
+      overflow: hidden;
+    }
+
+    .content-container {
+      padding: 0 10px;
+    }
+
+    .icon-container {
+      display: flex;
+      width: 40px;
+      min-width: 40px;
+      align-items: center;
+      justify-content: center;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    /* banner type coloring */
+
+    .ALERT {
+      background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMyIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDMgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPmV4Y2xhbWF0aW9uPC90aXRsZT4KPGcgdHJhbnNmb3JtPSJyb3RhdGUoMCwgMS41LCA4KSIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxLjUiIGN5PSIxNC41IiByPSIxLjUiLz48cGF0aCBkPSJNMCAuOTk2QzAgLjQ0Ni40NDMgMCAxIDBoMWMuNTUzIDAgMSAuNDQ1IDEgLjk5NnY4LjQ5OEMzIDEwLjMyNiAyLjMzNCAxMSAxLjUgMTEgLjY3MiAxMSAwIDEwLjMyOCAwIDkuNDk0Vi45OTZ6Ii8+PC9nPjwvc3ZnPg&#x3D;&#x3D;&quot;);
+      background-color: #FF3144;
+    }
+
+    .WARNING {
+      background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+UGF0aCAzPC90aXRsZT48cGF0aCBkPSJNOCAybDYgMTAuNUgyeiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZT0iI0ZGRiIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4&#x3D;&quot;);
+      background-color: #FFBB00;
+    }
+
+    .INFO {
+      background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMyIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDMgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPmV4Y2xhbWF0aW9uPC90aXRsZT48ZyB0cmFuc2Zvcm09InJvdGF0ZSgxODAsIDEuNSwgOCkiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGNpcmNsZSBjeD0iMS41IiBjeT0iMTQuNSIgcj0iMS41Ii8+PHBhdGggZD0iTTAgLjk5NkMwIC40NDYuNDQzIDAgMSAwaDFjLjU1MyAwIDEgLjQ0NSAxIC45OTZ2OC40OThDMyAxMC4zMjYgMi4zMzQgMTEgMS41IDExIC42NzIgMTEgMCAxMC4zMjggMCA5LjQ5NFYuOTk2eiIvPjwvZz48L3N2Zz4&#x3D;&quot;);
+      background-color: #378AD7;
+    }
+  </code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">template</td>
+                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;icon-container&quot; [ngClass]&#x3D;&quot;type&quot;&gt;&lt;/div&gt;
+&lt;div class&#x3D;&quot;content-container&quot;&gt;
+  &lt;p *ngIf&#x3D;&quot;text&quot;&gt;{{text}}&lt;/p&gt;
+  &lt;ng-content&gt;&lt;/ng-content&gt;
+&lt;/div&gt;
+</code></pre></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#text">text</a>
+                            </li>
+                            <li>
+                                <a href="#type">type</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="text"></a>
+                        <b>text</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/shared/banner.component.ts:77</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>A string of text that is displayed in the banner.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="type"></a>
+                        <b>type</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#BannerTypes" target="_self" >BannerTypes</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/shared/banner.component.ts:83</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>An enum of different types of the banner to change the visual.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input } from &#x27;@angular/core&#x27;;
+
+enum BannerTypes {
+  ALERT &#x3D; &#x27;ALERT&#x27;,
+  WARNING &#x3D; &#x27;WARNING&#x27;,
+  INFO &#x3D; &#x27;INFO&#x27;
+}
+
+/**
+ * A configurable component to display and emphasize information.
+ * The content can be defined by an optional text or content projection.
+ * 
+ * @example
+ * &#x60;&#x60;&#x60;
+&lt;banner
+  type&#x3D;&quot;WARNING&quot;
+  text&#x3D;&quot;Default text to be used within banner&quot;
+&gt;&lt;/banner&gt;
+&#x60;&#x60;&#x60;
+ */
+@Component({
+  selector: &#x27;banner&#x27;,
+  template: &#x60;
+    &lt;div class&#x3D;&quot;icon-container&quot; [ngClass]&#x3D;&quot;type&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;content-container&quot;&gt;
+      &lt;p *ngIf&#x3D;&quot;text&quot;&gt;{{text}}&lt;/p&gt;
+      &lt;ng-content&gt;&lt;/ng-content&gt;
+    &lt;/div&gt;
+  &#x60;,
+  styles: [&#x60;
+    :host {
+      display: flex;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px #00000066;
+      overflow: hidden;
+    }
+
+    .content-container {
+      padding: 0 10px;
+    }
+
+    .icon-container {
+      display: flex;
+      width: 40px;
+      min-width: 40px;
+      align-items: center;
+      justify-content: center;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    /* banner type coloring */
+
+    .ALERT {
+      background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMyIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDMgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPmV4Y2xhbWF0aW9uPC90aXRsZT4KPGcgdHJhbnNmb3JtPSJyb3RhdGUoMCwgMS41LCA4KSIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxLjUiIGN5PSIxNC41IiByPSIxLjUiLz48cGF0aCBkPSJNMCAuOTk2QzAgLjQ0Ni40NDMgMCAxIDBoMWMuNTUzIDAgMSAuNDQ1IDEgLjk5NnY4LjQ5OEMzIDEwLjMyNiAyLjMzNCAxMSAxLjUgMTEgLjY3MiAxMSAwIDEwLjMyOCAwIDkuNDk0Vi45OTZ6Ii8+PC9nPjwvc3ZnPg&#x3D;&#x3D;&quot;);
+      background-color: #FF3144;
+    }
+
+    .WARNING {
+      background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+UGF0aCAzPC90aXRsZT48cGF0aCBkPSJNOCAybDYgMTAuNUgyeiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZT0iI0ZGRiIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4&#x3D;&quot;);
+      background-color: #FFBB00;
+    }
+
+    .INFO {
+      background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMyIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDMgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPmV4Y2xhbWF0aW9uPC90aXRsZT48ZyB0cmFuc2Zvcm09InJvdGF0ZSgxODAsIDEuNSwgOCkiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGNpcmNsZSBjeD0iMS41IiBjeT0iMTQuNSIgcj0iMS41Ii8+PHBhdGggZD0iTTAgLjk5NkMwIC40NDYuNDQzIDAgMSAwaDFjLjU1MyAwIDEgLjQ0NSAxIC45OTZ2OC40OThDMyAxMC4zMjYgMi4zMzQgMTEgMS41IDExIC42NzIgMTEgMCAxMC4zMjggMCA5LjQ5NFYuOTk2eiIvPjwvZz48L3N2Zz4&#x3D;&quot;);
+      background-color: #378AD7;
+    }
+  &#x60;],
+
+})
+export class BannerComponent  {
+
+  /** 
+   * A string of text that is displayed in the banner.
+   * @type(string)
+   */
+  @Input() text: string;
+
+  /** 
+   * An enum of different types of the banner to change the visual.
+   * @type(BannerTypes)
+   */
+  @Input() type: BannerTypes;
+}
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-styleData">
+            <pre class="line-numbers"><code class="language-scss">
+    :host {
+      display: flex;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px #00000066;
+      overflow: hidden;
+    }
+
+    .content-container {
+      padding: 0 10px;
+    }
+
+    .icon-container {
+      display: flex;
+      width: 40px;
+      min-width: 40px;
+      align-items: center;
+      justify-content: center;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    /* banner type coloring */
+
+    .ALERT {
+      background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMyIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDMgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPmV4Y2xhbWF0aW9uPC90aXRsZT4KPGcgdHJhbnNmb3JtPSJyb3RhdGUoMCwgMS41LCA4KSIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxLjUiIGN5PSIxNC41IiByPSIxLjUiLz48cGF0aCBkPSJNMCAuOTk2QzAgLjQ0Ni40NDMgMCAxIDBoMWMuNTUzIDAgMSAuNDQ1IDEgLjk5NnY4LjQ5OEMzIDEwLjMyNiAyLjMzNCAxMSAxLjUgMTEgLjY3MiAxMSAwIDEwLjMyOCAwIDkuNDk0Vi45OTZ6Ii8+PC9nPjwvc3ZnPg&#x3D;&#x3D;&quot;);
+      background-color: #FF3144;
+    }
+
+    .WARNING {
+      background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+UGF0aCAzPC90aXRsZT48cGF0aCBkPSJNOCAybDYgMTAuNUgyeiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZT0iI0ZGRiIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4&#x3D;&quot;);
+      background-color: #FFBB00;
+    }
+
+    .INFO {
+      background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMyIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDMgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPmV4Y2xhbWF0aW9uPC90aXRsZT48ZyB0cmFuc2Zvcm09InJvdGF0ZSgxODAsIDEuNSwgOCkiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGNpcmNsZSBjeD0iMS41IiBjeT0iMTQuNSIgcj0iMS41Ii8+PHBhdGggZD0iTTAgLjk5NkMwIC40NDYuNDQzIDAgMSAwaDFjLjU1MyAwIDEgLjQ0NSAxIC45OTZ2OC40OThDMyAxMC4zMjYgMi4zMzQgMTEgMS41IDExIC42NzIgMTEgMCAxMC4zMjggMCA5LjQ5NFYuOTk2eiIvPjwvZz48L3N2Zz4&#x3D;&quot;);
+      background-color: #378AD7;
+    }
+  
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="icon-container" [ngClass]="type"></div><div class="content-container">  <p *ngIf="text">{{text}}</p>  <ng-content></ng-content></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BannerComponent', 'selector': 'banner'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'BannerComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'BannerComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
